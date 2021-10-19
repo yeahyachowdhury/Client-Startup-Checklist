@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css" />
+    <script src="lib/script.js"></script>
+  </head>
+
+<!--Initialize the app-->
+  <body ng-app="checklist" ng-cloak>
+    <div ng-controller="MainCtrl">
+      <div id="body">
+      <br>
+      <h1>Startup Checklist</h1>
+      <p>Checklist to cross off on startup</p>
+      <p>Article for getting started can be found by going to the Help Center and searching "Getting Started"</p>
+      
+      <div id="list-adder">
+      <ul id="list" style="list-style: none;">
+        <label class="checkbox">
+        <!--Using ng-repeat to iterate through each item in the object-->
+        <li ng-repeat="x in list">
+          <input type="checkbox" id="item" ng-model="x.done">
+          <label for="item" class="done-{{x.done}}">{{x.text}}</label><br>
+        </li>
+        </label>
+      </ul>
+
+      <form id="adder">
+        <input type="text" id="entry-box" ng-model="itemText">
+        <!--Using ng-click to call the addItem function in the controller-->
+        <input type="button" id="button" value="Add" ng-click="addItem()"><br><br>
+        </form>
+      </div>
+      
+      </div>
+    </div>
+  </body>
+</html>
