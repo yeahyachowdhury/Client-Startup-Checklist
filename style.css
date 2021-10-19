@@ -1,0 +1,51 @@
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+
+h1{
+  text-align: center;
+}
+
+p{
+  font-size: 15px;
+  text-align: center;
+}
+
+body {
+  font-family: open sans;
+  font-size: 20px;
+  background-color: #228B22;
+;
+}
+
+.done-true{
+  color: gray;
+  text-decoration: line-through;
+}
+
+#entry-box{
+  border-radius: 5px;
+  border-width: 3px;
+}
+
+#button{
+  border: solid #228B22;
+  border-width: 5px;
+  border-radius: 5px;
+  background-color: #228B22;
+  color: white; 
+}
+
+#body{
+  background-color: white;
+  border-radius: 40px;
+}
+
+#list-adder{
+  text-indent: 5%;
+}
